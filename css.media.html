@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS MEDIA QUERY</title>
+</head>
+<style>
+    body
+    {
+        margin: 0px;
+        width: 100%;
+        height: 100vh;
+        font-family: "Audiowide", sans-serif;
+    }
+
+    .principal
+    {
+        background-color: rgb(252, 238, 253);
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+
+    }
+    .quadrado
+    {
+        width: 20%;
+        height: 180px;
+        margin: 20px;
+    }
+    @media screen and (min-width: 600px) and (max-width: 900px)
+    {
+        .principal
+        {
+            flex-direction: column;
+        }
+        .quadrado
+        {
+            background-color:blueviolet
+        }
+    }
+</style>
+<body>
+    <div class="principal">
+        <b> BARBIE LIFE IN THE DREAMHOUSE :) </b>
+        <div class="quadrado">
+            <img src="barbie.gif" width="250px" height="190px" >
+        </div>
+
+        <div class="quadrado">
+            <img src="barbie-ken.gif"  width="250px" height="190px">
+        </div>
+
+        <div class="quadrado">
+            <img src="barbie-ken (1).gif"  width="250px" height="190px">
+            
+        </div>
+    </div>
+    
+</body>
+</html>
